@@ -47,6 +47,12 @@ export const Container = styled.div<IFoodPlateProps>`
       line-height: 34px;
       color: #39b100;
 
+      ${props =>
+        !props.available &&
+        css`
+          color: #6c6c80;
+        `};
+
       b {
         font-weight: 600;
       }
